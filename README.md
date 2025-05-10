@@ -2,11 +2,10 @@
 
 NEURA is a prototype AI tool designed to support real-time clinical decision-making through structured analysis of unstructured patient consult blurbs.
 
-## Core Goals:
-- Identify cognitive biases and red flags
-- Surface high-risk findings from consult notes
-- Prompt structured reflection before irreversible decisions
+### Core Objectives:
+- Surface cognitive biases and risk signals
+- Flag red flags from clinical vignettes
+- Prompt structured reflection to prevent preventable harm
 
-This repository contains the first version of NEURA’s clinical parser and signal flagger.
-
-More modules coming soon.
+This is Version 0.1 of the blurb parser engine.
+More coming soon.
