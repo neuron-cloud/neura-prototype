@@ -1,6 +1,6 @@
 # Synapse: Clinical Decision Reflection Prototype
 
-NEURA is a prototype AI tool built to assist in neurosurgical consult decision-making.  
+Synapse is a prototype AI tool built to assist in neurosurgical consult decision-making.  
 It analyzes real clinical text to flag risk patterns such as:
 
 - Midline shift
@@ -18,7 +18,7 @@ It analyzes real clinical text to flag risk patterns such as:
   
 ---
 
-## Where NEURA Lives
+## Where Synapse Lives
 
 The current working prototype is live in [Google Colab](https://colab.research.google.com).  
 
