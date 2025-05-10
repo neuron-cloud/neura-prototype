@@ -9,3 +9,9 @@ NEURA is a prototype AI tool designed to support real-time clinical decision-mak
 
 This is Version 0.1 of the blurb parser engine.
 More coming soon.
+
+## License
+
+This project is open for educational and demonstration purposes only.  
+It may not be reproduced, modified, or used commercially without explicit permission.  
+All rights reserved © 2025 Mychael Delgardo.
