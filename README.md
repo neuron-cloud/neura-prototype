@@ -1,4 +1,4 @@
-# NEURA: Clinical Decision Reflection Prototype
+# Synapse: Clinical Decision Reflection Prototype
 
 NEURA is a prototype AI tool built to assist in neurosurgical consult decision-making.  
 It analyzes real clinical text to flag risk patterns such as:
