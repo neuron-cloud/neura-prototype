@@ -26,7 +26,7 @@ To access the live Colab environment, contact the creator.
 
 ---
 
-## tatus
+## Status
 
 NEURA v0.3 includes:
 - Phrase-level filtering (“coags pending” ≠ coagulopathy)
