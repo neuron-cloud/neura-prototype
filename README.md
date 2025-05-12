@@ -27,19 +27,26 @@ It doesn't replace judgment. It reflects it.
 
 ---
 
-## Status: v0.3
+## Status: v0.5
 
-Synapse is a fully functional Python script deployed via Google Colab, currently returning correct structured flags based on a real dataset of consult blurbs.
+New Features:
+	•	Expanded abbreviation parsing and baseline detection logic
+	•	Reflex parsing: Hoffman’s, clonus, DTR scale, Babinski
+	•	Basic motor pattern recognition (e.g. 5/5/5/5/4 = motor deficit)
+	•	Improved negation handling for terms like “denies saddle anesthesia”
+	•	Introduced cranial nerve/motor parsing for slurred speech, facial droop, tongue deviation
+	•	Added preliminary handling of baseline vs acute sensory findings
 
-To access the live Colab environment, contact the creator.
+Known Bugs:
+	•	Stable neuro flags still firing when deficits are present
+	•	Missing some structured output on known deficits (e.g., clonus not flagging in all contexts)
+	•	“Intact except” and “baseline” logic still needs refinement
 
----
+Next Priorities:
+	•	Overhaul risk_flag() for stricter conditional logic
+	•	Implement plan suggestion engine
+	•	Begin streamlining integration for real-time input
 
-## Roadmap
-
-- [ ] v0.4: Multi-flag return per consult
-- [ ] v0.5: Streamlit interface (web-based demo)
-- [ ] v1.0: Open-source public release with hospital-safe dataset
 
 ---
 
