@@ -1,39 +1,45 @@
 # Synapse: Clinical Decision Reflection Prototype
 
-Synapse is a prototype AI tool built to assist in neurosurgical consult decision-making.  
-It analyzes real clinical text to flag risk patterns such as:
-
-- Midline shift
-- Coagulopathy indicators
-- Myelopathy signs
-- Frailty or cognitive decline
-- Neurological exam findings
+**Synapse** is an AI-powered logic engine that assists in neurosurgical consult decision-making.  
+It scans real clinical text for risk signals and cognitive bias markers, offering structured feedback to clinicians or trainees.
 
 ---
 
-### Core Objectives:
+## Purpose
+
+Synapse was born from the gaps in real-world clinical decision-making, especially in high-stakes, high-fatigue environments like neurosurgery.  
+It doesn't replace judgment. It reflects it.
+
+---
 - Surface cognitive biases and risk signals
 - Flag red flags from clinical vignettes
 - Prompt structured reflection to prevent preventable harm
-  
+
 ---
 
-## Where Synapse Lives
+## Features
 
-The current working prototype is live in [Google Colab](https://colab.research.google.com).  
+- Keyword-based risk flagging
+- Negation-aware logic (e.g., “denies clonus” ≠ clonus)
+- Exception filters (e.g,. “coags pending” ≠ coagulopathy)
+- Basic logic-based classification for 6+ neurosurgical red flags
+- Console output or script-based review
+
+---
+
+## Status: v0.3
+
+Synapse is a fully functional Python script deployed via Google Colab, currently returning correct structured flags based on a real dataset of consult blurbs.
 
 To access the live Colab environment, contact the creator.
 
 ---
 
-## Status
+## Roadmap
 
-NEURA v0.3 includes:
-- Phrase-level filtering (“coags pending” ≠ coagulopathy)
-- Negation handling (“denies clonus” ≠ clonus present)
-- Basic clinical heuristics based on exam interpretation
-
-Next: deploy to Streamlit or cloud API
+- [ ] v0.4: Multi-flag return per consult
+- [ ] v0.5: Streamlit interface (web-based demo)
+- [ ] v1.0: Open-source public release with hospital-safe dataset
 
 ---
 
