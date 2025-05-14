@@ -24,29 +24,54 @@ It doesn't replace judgment. It reflects it.
 - Exception filters (e.g,. “coags pending” ≠ coagulopathy)
 - Basic logic-based classification for 6+ neurosurgical red flags
 - Console output or script-based review
+- Expanded abbreviation parsing and baseline detection logic
+- Reflex parsing: Hoffman’s, clonus, DTR scale, Babinski
+- Basic motor pattern recognition (e.g. 5/5/5/5/4 = motor deficit)
+- Improved negation handling for terms like “denies saddle anesthesia”
+- Introduced cranial nerve/motor parsing for slurred speech, facial droop, tongue deviation
+- Added preliminary handling of baseline vs acute sensory findings
 
 ---
 
-## Status: v0.5
+## Current Version: `v0.5.4`
 
-New Features:
-	•	Expanded abbreviation parsing and baseline detection logic
-	•	Reflex parsing: Hoffman’s, clonus, DTR scale, Babinski
-	•	Basic motor pattern recognition (e.g. 5/5/5/5/4 = motor deficit)
-	•	Improved negation handling for terms like “denies saddle anesthesia”
-	•	Introduced cranial nerve/motor parsing for slurred speech, facial droop, tongue deviation
-	•	Added preliminary handling of baseline vs acute sensory findings
+### Core Functionalities
+- **Abbreviation Expansion:** Fully customizable dictionary supporting over 150 medical terms
+- **Negation Detection:** Handles direct, list-based, and contextual denial of symptoms
+- **Physical Exam Parser:**
+  - Orientation (Ox0–3)
+  - Motor strength breakdown with weakness flags (bug pending fix)
+  - Sensory deficits
+  - Reflex abnormalities (Hoffman’s, clonus, Babinski)
+  - Sphincter findings and saddle anesthesia
+  - Cervical/thoracolumbar tenderness
+- **Risk Flagging Engine:** Escalates flags across 7 domains (e.g. AMS, myelopathy, frailty, cancer, spine)
 
-Known Bugs:
-	•	Stable neuro flags still firing when deficits are present
-	•	Missing some structured output on known deficits (e.g., clonus not flagging in all contexts)
-	•	“Intact except” and “baseline” logic still needs refinement
+---
 
-Next Priorities:
-	•	Overhaul risk_flag() for stricter conditional logic
-	•	Implement plan suggestion engine
-	•	Begin streamlining integration for real-time input
+## 🚧 Bugs / In Progress
+- Motor strength weakness flag not triggering (likely due to variable assignment bug in `extract_exam_components`)
+- `intact except` clause triggers even when more specific flags (e.g. weakness) are found
+- Currently hardcoded to `/content/demo_blurbs.txt` in Colab
 
+---
+
+## 📂 Demo Instructions
+1. Place your `demo_blurbs.txt` file in the Colab `/content` directory.
+2. Run Cells 1–7 in order. Output will appear under each consult.
+3. Flags include:
+   - ✅ Stable or normal findings
+   - ⚠️ Warning signs
+   - 🚨 Critical emergencies
+   - 🧠 Cognitive or motor concerns
+
+---
+
+## Next Steps
+- [ ] Fix `weakness` variable initialization bug in motor parsing
+- [ ] Ensure flags trigger for all consults
+- [ ] Move flag messages into structured dict for export
+- [ ] Add `severity` tier to each flag (1–3)
 
 ---
 
