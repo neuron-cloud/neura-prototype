@@ -1,7 +1,7 @@
 # Synapse: Clinical Decision Reflection Prototype
 
-**Synapse** is an AI-powered logic engine that assists in neurosurgical consult decision-making.  
-It scans real clinical text for risk signals and cognitive bias markers, offering structured feedback to clinicians or trainees.
+Synapse: Real-Time Clinical Risk Flagging Engine
+Synapse is an intelligent NLP-based decision support engine designed to parse unstructured clinical text and extract high-risk neurological exam findings in real-time. Built from the ground up for neurosurgical consults, Synapse identifies subtle red flags—including motor weakness patterns, altered mental status, pathological reflexes, sensory deficits, cauda equina features, and spine instability—with human-like nuance and contextual reasoning.
 
 ---
 
@@ -14,64 +14,38 @@ It doesn't replace judgment. It reflects it.
 - Surface cognitive biases and risk signals
 - Flag red flags from clinical vignettes
 - Prompt structured reflection to prevent preventable harm
+  
+🔧 Use Cases
+- Triage augmentation for neurosurgical consult services
+- EMR decision support
+- NLP-enhanced risk analysis pipelines
+- Academic research on neurological NLP
 
 ---
 
-## Features
+## Core Features (v0.6)
 
-- Keyword-based risk flagging
-- Negation-aware logic (e.g., “denies clonus” ≠ clonus)
-- Exception filters (e.g,. “coags pending” ≠ coagulopathy)
-- Basic logic-based classification for 6+ neurosurgical red flags
-- Console output or script-based review
-- Expanded abbreviation parsing and baseline detection logic
-- Reflex parsing: Hoffman’s, clonus, DTR scale, Babinski
-- Basic motor pattern recognition (e.g. 5/5/5/5/4 = motor deficit)
-- Improved negation handling for terms like “denies saddle anesthesia”
-- Introduced cranial nerve/motor parsing for slurred speech, facial droop, tongue deviation
-- Added preliminary handling of baseline vs acute sensory findings
+- Motor Strength Parsing: Accurately detects weakness in upper/lower extremities using 5-point motor scales (e.g., RUE 5/5/5/4-/4), even with inconsistent formatting.
+- Abbreviation Expansion: Expands over 200+ medical shorthand terms for clarity and downstream parsing.
+- Advanced Negation Detection: Context-aware negation engine handles multi-symptom denials (e.g. "denies weakness, numbness, saddle anesthesia").
+- Baseline Filtering: Filters out chronic findings or known deficits to reduce false positives.
+- Physical Exam Extraction: Automatically isolates neurological exam content from full consult blurbs.
+- Risk Stratification: Flags findings based on severity: 🚨 Critical, ⚠️ High-Risk, 🦴 Focal Deficit, 🧠 Cognitive, 🔍 Monitor, ✅ Stable.
 
----
+📥 Input
+Raw consult blurbs or EMR notes (.txt file format recommended, delimited by ___).
 
-## Current Version: `v0.5.4`
+'Exam - wide awake, intact except mildly slurred speech, Lt droop, Rt tongue deviation, subtle lt drift, LUE 4+/5'
 
-### Core Functionalities
-- **Abbreviation Expansion:** Fully customizable dictionary supporting over 150 medical terms
-- **Negation Detection:** Handles direct, list-based, and contextual denial of symptoms
-- **Physical Exam Parser:**
-  - Orientation (Ox0–3)
-  - Motor strength breakdown with weakness flags (bug pending fix)
-  - Sensory deficits
-  - Reflex abnormalities (Hoffman’s, clonus, Babinski)
-  - Sphincter findings and saddle anesthesia
-  - Cervical/thoracolumbar tenderness
-- **Risk Flagging Engine:** Escalates flags across 7 domains (e.g. AMS, myelopathy, frailty, cancer, spine)
+📤 Output
+Structured and prioritized clinical flags with severity-tiered emojis.
 
----
-
-## 🚧 Bugs / In Progress
-- Motor strength weakness flag not triggering (likely due to variable assignment bug in `extract_exam_components`)
-- `intact except` clause triggers even when more specific flags (e.g. weakness) are found
-- Currently hardcoded to `/content/demo_blurbs.txt` in Colab
-
----
-
-## 📂 Demo Instructions
-1. Place your `demo_blurbs.txt` file in the Colab `/content` directory.
-2. Run Cells 1–7 in order. Output will appear under each consult.
-3. Flags include:
-   - ✅ Stable or normal findings
-   - ⚠️ Warning signs
-   - 🚨 Critical emergencies
-   - 🧠 Cognitive or motor concerns
-
----
-
-## Next Steps
-- [ ] Fix `weakness` variable initialization bug in motor parsing
-- [ ] Ensure flags trigger for all consults
-- [ ] Move flag messages into structured dict for export
-- [ ] Add `severity` tier to each flag (1–3)
+'🦴 Weakness noted in LEFT EXTREMITY (drift)  
+🔍 Finding: mildly slurred speech  
+🔍 Finding: left droop  
+🔍 Finding: right tongue deviation  
+🔍 Finding: subtle left drift  
+🔍 Finding: left upper extremity 4+/5'
 
 ---
 
