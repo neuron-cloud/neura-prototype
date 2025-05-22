@@ -1,4 +1,4 @@
-Synapse v2.0: Enhanced Clinical Risk Flagging Engine
+**Synapse v2.0: Enhanced Clinical Risk Flagging Engine**
 
 Synapse is an intelligent NLP-based decision support engine designed to parse unstructured clinical text and extract high-risk neurological exam findings in real-time. Built from the ground up for neurosurgical consults, Synapse identifies subtle red flags—including motor weakness patterns, altered mental status, pathological reflexes, sensory deficits, cauda equina features, and spine instability—with human-like nuance and contextual reasoning.
 
