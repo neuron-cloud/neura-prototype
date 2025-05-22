@@ -168,6 +168,7 @@ All rights reserved © 2025 Mychael Delgardo
 🔄 Version History
 
 v2.0 - Major rewrite with enhanced clinical intelligence, structured output, and comprehensive neurological assessment
+
 v1.0 - Basic pattern recognition and risk flagging
 
 
