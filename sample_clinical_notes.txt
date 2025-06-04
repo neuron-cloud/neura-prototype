@@ -1,0 +1,74 @@
+# Sample Clinical Notes for Synapse v3.0 Testing
+
+## Case 1: Acute Stroke (CRITICAL)
+55M with h/o HTN, DM2, presents with acute onset L-sided weakness and slurred speech 
+that began 2 hours ago. Wife reports pt was normal at breakfast. Now c/o severe HA.
+
+PE: Vitals stable. Neuro exam: Alert but dysarthric speech. L facial droop present. 
+LUE 2/5 throughout, LLE 3/5 hip flexion, 4/5 elsewhere. RUE/RLE 5/5. 
+Sensation decreased to light touch on L side. DTRs 3+ on L, 2+ on R. 
+L Babinski positive. NIHSS 12.
+
+Head CT: No acute hemorrhage. 
+
+A/P: Concern for acute R MCA stroke. Within tPA window. Neurology consulted.
+
+---
+
+## Case 2: Cauda Equina Syndrome (CRITICAL)
+45F presents with progressive bilateral leg weakness x3 days, now with saddle 
+anesthesia and urinary retention. Unable to walk since this AM. No trauma hx.
+
+Exam: Alert, oriented. BLE 3/5 throughout, absent patellar reflexes bilaterally, 
+decreased sensation below L3, saddle anesthesia present, decreased rectal tone.
+Post-void residual 450cc.
+
+MRI pending.
+
+---
+
+## Case 3: Cervical Myelopathy (WARNING)
+68M with progressive hand clumsiness and gait difficulty x6 months. Drops objects 
+frequently, difficulty with buttons. Uses cane for past 2 months.
+
+Exam: Wide-based gait, requires cane for ambulation. BUE 4+/5 grip strength, 
+hyperreflexia throughout all 4 extremities, bilateral Hoffman's sign positive, 
+sustained clonus at ankles bilaterally. Sensation intact but c/o numbness in fingertips.
+
+---
+
+## Case 4: Lumbar Radiculopathy (MODERATE)
+52F with 2 week h/o sharp shooting pain down R leg after lifting heavy box. 
+Pain radiates from lower back to lateral calf. Worse with sitting.
+
+Exam: Antalgic gait favoring R. SLR positive on R at 30 degrees. RLE 4+/5 ankle 
+dorsiflexion (EHL weak), 5/5 elsewhere. Decreased sensation over R L5 distribution. 
+DTRs 2+ and symmetric. No clonus or Babinski.
+
+---
+
+## Case 5: Spinal Trauma (WARNING)
+22M s/p MVC, restrained driver, airbags deployed. C/o neck pain and bilateral 
+hand tingling. Denies LOC. C-collar in place by EMS.
+
+Exam: Alert, GCS 15. Midline C-spine TTP at C5-C6 level, possible step-off 
+palpated. RUE 4/5/4/4+/5, LUE 5/5 throughout, BLE 5/5. DTRs 2+ symmetric. 
+No clonus. Sensation intact to light touch.
+
+---
+
+## Case 6: Simple Back Pain (LOW RISK)
+55M with chronic LBP x10 years, no red flags. Pain 4/10, worse with prolonged 
+standing. No radiation, no bowel/bladder symptoms, no night pain.
+
+Exam: Normal gait, FROM lumbar spine. No midline TTP. Paraspinal muscle tenderness. 
+5/5 strength throughout BLE, sensation intact, DTRs 2+ symmetric, SLR negative 
+bilaterally. No clonus or pathological reflexes.
+
+---
+
+## Case 7: Post-op Spine Check (MONITORING)
+44M POD#1 s/p L4-5 discectomy for HNP. Pre-op L leg pain resolved. Ambulating well.
+
+Exam: Incision c/d/i. Moving all extremities well. BLE 5/5 throughout including 
+EHL bilaterally. Sensation intact. No new deficits. DTRs 2+ symmetric.
