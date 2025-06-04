@@ -115,6 +115,18 @@ L facial droop, LUE 2/5, NIHSS 12. Within tPA window.
   → Emergent neuroimaging
 ```
 
+## 🚀 Quick Start
+
+### Option 1: Google Colab (Recommended)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://github.com/neuron-cloud/synapse-engine/blob/main/Synapse_V3.ipynb)
+
+### Option 2: Local Jupyter
+```bash
+git clone https://github.com/neuron-cloud/Synapse-V3.git
+cd Synapse-V3
+pip install -r requirements.txt
+jupyter notebook Synapse_v3.ipynb
+
 # 🎨 Interactive Dashboard
 
 The v3.0 dashboard provides:
