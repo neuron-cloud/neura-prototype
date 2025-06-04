@@ -1,235 +1,208 @@
-# Synapse v2.0: Enhanced Clinical Risk Flagging Engine
+# Synapse v3.0: Advanced Clinical Risk Intelligence Platform
 
-Synapse is an intelligent NLP-based decision support engine designed to parse unstructured clinical text and extract high-risk neurological exam findings in real-time. Built from the ground up for neurosurgical consults, Synapse identifies subtle red flags—including motor weakness patterns, altered mental status, pathological reflexes, sensory deficits, cauda equina features, and spine instability—with human-like nuance and contextual reasoning.
+Synapse is an intelligent NLP-based decision support engine designed to parse unstructured clinical text and extract high-risk neurological exam findings in real-time. Built from the ground up for neurosurgical consults, Synapse identifies subtle red flags—including motor weakness patterns, altered mental status, pathological reflexes, sensory deficits, cauda equina features, stroke indicators, and spine instability—with human-like nuance and contextual reasoning.
 
-**🎯 Purpose**
+## 🎯 Purpose
 
-Synapse was born from the gaps in real-world clinical decision-making, especially in high-stakes, high-fatigue environments like neurosurgery. It doesn't replace judgment. It reflects it.
+Synapse was born from the gaps in real-world clinical decision-making, especially in high-stakes, high-fatigue environments like neurosurgery. It doesn't replace judgment. It enhances it.
 
-Surface cognitive biases and risk signals that might be overlooked
-Flag critical findings from clinical vignettes with confidence scoring
-Prompt structured reflection to prevent preventable harm
-Enhance clinical decision-making through systematic pattern recognition
+- Surface cognitive biases and risk signals that might be overlooked
+- Flag critical findings from clinical vignettes with confidence scoring
+- Provide standardized clinical scores with evidence-based recommendations
+- Enhance clinical decision-making through systematic pattern recognition
 
+## 🔧 Use Cases
 
-**🔧 Use Cases**
+- **Neurosurgical Triage Augmentation** - Real-time risk assessment for consult services
+- **EMR Decision Support** - Integrated clinical alerts and flags
+- **Quality Assurance** - Systematic review of clinical documentation
+- **Medical Education** - Training tool for recognizing critical neurological findings
+- **Research Applications** - NLP-enhanced analysis of clinical datasets
 
-Neurosurgical Triage Augmentation - Real-time risk assessment for consult services
+# 🆕 What's New in v3.0
 
-EMR Decision Support - Integrated clinical alerts and flags
+**Revolutionary Features:**
 
-Quality Assurance - Systematic review of clinical documentation
+- 🎨 **Interactive Clinical Dashboard** - Beautiful web interface for real-time analysis
+- 📊 **Standardized Clinical Scoring** - ASIA, Modified Rankin, Nurick, Cauda Equina Risk scores
+- 🚨 **Enhanced Stroke Detection** - FAST criteria and NIHSS integration
+- 🦴 **Spinal Instability Assessment** - Mechanical pain and fracture pattern recognition
+- 🧠 **Myelopathy Scoring** - JOA-based assessment with gait analysis
+- 📈 **Visual Analytics** - Real-time charts and statistics
+- 💾 **Export Functionality** - JSON export for EMR integration
+- ⚡ **One-Click Analysis** - Simplified workflow for any clinical note
 
-Medical Education - Training tool for recognizing critical neurological findings
+**Enhanced Clinical Intelligence:**
 
-Research Applications - NLP-enhanced analysis of clinical datasets
+- **Stroke/CVA Assessment** - NIHSS scoring, FAST criteria, thrombolysis window detection
+- **Advanced Motor Analysis** - Complex strength patterns (e.g., "LLE 2/5/4+/4+/5")
+- **Peripheral Nerve Detection** - Foot drop, radiculopathy patterns
+- **Timeline Urgency** - Acute onset and progression detection
+- **Clinical Recommendations** - Evidence-based next steps for each finding
 
+## 🚀 Core Features
 
-# 🆕 What's New in v2.0
+### Enhanced Pattern Recognition:
+- **300+ Medical Abbreviations** - Comprehensive expansion dictionary
+- **Complex Motor Patterns** - Multi-muscle strength assessment
+- **Contextual Negation** - "Intact except" vs "denies" distinction
+- **Temporal Awareness** - Baseline vs acute finding classification
+- **Anatomical Mapping** - Standardized extremity and spinal level notation
 
-**Major Enhancements:**
+### Severity Classification:
+- 🚨 **CRITICAL** - Immediate intervention required (cauda equina, severe stroke)
+- ⚠️ **WARNING** - Urgent evaluation needed (significant weakness, UMN signs)
+- 🦴 **MOTOR** - Focal motor deficits requiring attention
+- 🧠 **NEURO** - Neurological findings requiring monitoring
+- 🔍 **MONITORING** - Findings requiring observation
+- ✅ **NORMAL** - Normal/stable findings
 
-🧠 Comprehensive Neurological Assessment - Full consciousness, orientation, cranial nerve, and motor response evaluation
+### Clinical Scoring System:
+- **ASIA Impairment Scale** - Spinal cord injury classification
+- **Modified Rankin Scale** - Stroke disability assessment
+- **Nurick Grade** - Cervical myelopathy severity
+- **Synapse Risk Score** - Composite risk stratification
+- **Cauda Equina Risk Score** - Emergency spine assessment
 
-🚨 Critical Finding Detection - Advanced pattern recognition for emergent conditions (cauda equina, stroke, brain herniation)
+### Technical Specifications:
+- **Processing Speed** - Sub-10ms analysis time
+- **Confidence Scoring** - 0.0-1.0 reliability metrics
+- **Error Handling** - Comprehensive logging and exception management
+- **Scalability** - Designed for high-volume clinical environments
 
-⚡ Real-time Processing - Structured output with confidence scoring and processing metrics
+# 💻 Installation & Usage
 
-🎯 Enhanced Accuracy - Sophisticated negation detection and context-aware parsing
+## Google Colab / Jupyter Notebook:
 
-📊 Structured Data Model - Object-oriented clinical findings with severity classification
+```python
+# Cell 1: Setup
+!pip install openai ipywidgets matplotlib seaborn pandas -q
+# Enter your OpenAI API key when prompted
 
-🔍 Deduplication Logic - Eliminates redundant findings while preserving clinical nuance
+# Cell 2: Load your Synapse v3.0 code
+# Cell 3: Enhanced patterns
+# Cell 4: Clinical scoring
+# Cell 5: Interactive dashboard
 
-🔗 GPT Integration - Optional AI-powered clinical summaries
+# The dashboard will appear automatically
+# Just paste any clinical note and click "Analyze"
+```
 
+## Example Analysis:
 
-**Clinical Intelligence:**
+**Input:**
+```
+55M with acute onset L-sided weakness and slurred speech 2 hours ago. 
+L facial droop, LUE 2/5, NIHSS 12. Within tPA window.
+```
 
-Motor Strength Assessment - Handles complex patterns (e.g., "LLE 2/5/4+/4+/5", "RUE 4+ throughout")
-
-Pathological Reflexes - Babinski, Hoffman's, clonus, hyperreflexia detection
-
-Sensory Level Mapping - Spinal cord level assessment (T10, L1, etc.)
-
-Cauda Equina Screening - Saddle anesthesia, bowel/bladder dysfunction
-
-UMN/LMN Differentiation - Upper vs lower motor neuron sign classification
-
-Baseline Filtering - Chronic vs acute finding discrimination
-
-
-
-**🚀 Core Features**
-
-Enhanced Pattern Recognition:
-
-300+ Medical Abbreviations - Comprehensive expansion dictionary
-
-Complex Motor Patterns - Multi-muscle strength assessment
-
-Contextual Negation - "Intact except" vs "denies" distinction
-
-Temporal Awareness - Baseline vs acute finding classification
-
-Anatomical Mapping - Standardized extremity and spinal level notation
-
-
-**Severity Classification:**
-
-🚨 CRITICAL - Immediate intervention required (brain herniation, cauda equina)
-
-⚠️ WARNING - Urgent evaluation needed (significant weakness, pathological reflexes)
-
-🦴 MOTOR - Focal motor deficits
-
-🧠 NEURO - Neurological findings requiring attention
-
-🔍 MONITORING - Findings requiring observation
-
-✅ NORMAL - Normal/stable findings
-
-
-**Technical Specifications:**
-
-Processing Speed - Sub-10ms analysis time
-
-Confidence Scoring - 0.0-1.0 reliability metrics
-
-Error Handling - Comprehensive logging and exception management
-
-Scalability - Designed for high-volume clinical environments
-
-
-# 💻 Usage
-Jupyter Notebook / Google Colab:
-python# Run the notebook cell to load Synapse
-Paste your clinical note when prompted
-
-📋 Clinical Note: [PASTE YOUR CLINICAL TEXT HERE]
-Command Line:
-bashpython synapse.py
-Follow the interactive prompts
-
-Example Input:
-44M s/p T9-10 lami, p/t w/worsening LBP, saddle anesthesia, urinary retention.
-Exam: Ox3, intact except LLE 4+ throughout, T10 sensory level, +saddle anesthesia, 
-Lt babinski, Lt clonus, LLE DTRs 3+
-
-Example Output:
+**Output:**
+```
 🚨 CRITICAL FINDINGS:
-  🚨 Saddle anesthesia—urgent cauda equina evaluation needed (confidence: 0.95)
+  🚨 Stroke alert: Facial droop, Speech difficulty, Arm weakness, Within thrombolysis window
 
-⚠️ WARNING FINDINGS:
-  ⚠️ Sensory level at T10—possible cord involvement (confidence: 0.90)
-  
-  ⚠️ Clonus detected left—UMN involvement (confidence: 0.90)
-  
-  ⚠️ Babinski sign left—UMN involvement (confidence: 0.90)
-  
-  ⚠️ Hyperreflexia LLE (3+)—UMN involvement (confidence: 0.85)
-  
+⚠️ WARNING FINDINGS:  
+  ⚠️ Moderate NIHSS score (12)—significant stroke
+  ⚠️ Significant weakness in LEFT UPPER EXTREMITY
 
-🦴 MOTOR FINDINGS:
-  🦴 Weakness in LEFT LOWER EXTREMITY: 4+ throughout (confidence: 0.90)
+📊 CLINICAL SCORES:
+  Modified Rankin Scale: 4/6 - Severe disability
+  Synapse Risk Score: 8.5/20 - HIGH RISK
+  
+⚡ IMMEDIATE ACTION REQUIRED
+  → Activate stroke team
+  → Consider tPA administration
+  → Emergent neuroimaging
+```
 
-✅ NORMAL FINDINGS:
-  ✅ Fully oriented: Ox3 (confidence: 0.90)
+# 🎨 Interactive Dashboard
 
-📊 SUMMARY: 7 findings, overall confidence: 0.90, processing time: 4ms
+The v3.0 dashboard provides:
+- **Real-time Analysis** - Instant processing of any clinical note
+- **Three-Tab Interface**:
+  - Clinical Findings - Categorized neurological findings
+  - Clinical Scores - Standardized assessments with interpretations
+  - Analytics - Visual charts and statistics
+- **Export Functionality** - Save results as JSON for EMR integration
+- **GPT Integration** - Optional AI-powered clinical summaries
 
 # ⚙️ Configuration Options
-Environment Variables:
 
-bash# Optional: Customize Synapse behavior
-
-export OPENAI_API_KEY="your-key-here"           # For GPT summaries
-
-export ENABLE_GPT_SUMMARY="true"                # Enable/disable AI summaries
-
-export LOG_LEVEL="WARNING"                      # Logging verbosity
-
-export CONFIDENCE_THRESHOLD="0.7"               # Minimum confidence to display
-
-In-Code Configuration:
-python# Modify the Config class for custom settings
+```python
+# In-code configuration
 class Config:
-    def __init__(self):
-        self.openai_api_key = "your-key-here"
-        self.enable_gpt_summary = True
-        self.confidence_threshold = 0.7
+    openai_api_key = os.getenv('OPENAI_API_KEY')
+    enable_gpt_summary = True
+    log_level = 'WARNING'
+    confidence_threshold = 0.7
+```
 
 # 🏥 Clinical Applications
-**Neurosurgical Consults:**
 
-Spinal Cord Compression - Sensory levels, motor weakness, reflex changes
+## Neurosurgical Emergencies:
+- **Cauda Equina Syndrome** - Saddle anesthesia, bowel/bladder dysfunction
+- **Acute Stroke** - NIHSS scoring, thrombolysis window assessment
+- **Spinal Cord Compression** - Sensory levels, motor weakness patterns
+- **Cervical Myelopathy** - Gait disturbance, hand clumsiness, hyperreflexia
 
-Cauda Equina Syndrome - Saddle anesthesia, bowel/bladder dysfunction
-
-Brain Herniation - Altered consciousness, motor posturing
-
-Stroke Assessment - Focal deficits, speech changes, facial asymmetry
-
-
-**Quality Assurance:**
-
-Documentation Review - Systematic finding extraction
-
-Clinical Correlation - Exam-imaging concordance
-
-Risk Stratification - Severity-based triage support
-
-
-
-# 🔬 Technical Architecture
-Core Components:
-
-Pattern Recognition Engine - Compiled regex with clinical intelligence
-
-Negation Detection - Context-aware clinical language processing
-
-Severity Classification - Evidence-based risk stratification
-
-Confidence Scoring - Reliability metrics for each finding
-
-Deduplication Logic - Eliminates redundant findings
-
-
-Performance Metrics:
-
-Processing Speed - <10ms typical analysis time
-
-Accuracy - Validated against clinical scenarios
-
-Reliability - Confidence scoring for uncertainty quantification
-
+## Quality Assurance:
+- **Documentation Review** - Systematic finding extraction
+- **Risk Stratification** - Evidence-based triage support
+- **Clinical Correlation** - Exam findings to recommendations
 
 # 📋 Requirements
 
-Python 3.8+
-OpenAI API Key (optional, for GPT summaries)
-Dependencies: openai, re, dataclasses, typing
-
+- Python 3.8+
+- OpenAI API Key (optional, for GPT summaries)
+- Dependencies: `openai`, `ipywidgets`, `matplotlib`, `seaborn`, `pandas`
 
 # 🚨 Important Disclaimers
-# ⚠️ FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY
 
-This tool is NOT a medical device and should NOT be used for clinical decision-making
-Always consult qualified healthcare professionals for medical decisions
-The system may miss critical findings or generate false positives
-Human clinical judgment remains essential and irreplaceable
+## ⚠️ FOR EDUCATIONAL AND RESEARCH PURPOSES ONLY
 
+- This tool is NOT a medical device and should NOT be used for clinical decision-making
+- Always consult qualified healthcare professionals for medical decisions
+- The system may miss critical findings or generate false positives
+- Human clinical judgment remains essential and irreplaceable
+
+# 🔬 Technical Architecture
+
+## Core Components:
+- **Pattern Recognition Engine** - Advanced regex with clinical intelligence
+- **Negation Detection** - Context-aware clinical language processing
+- **Severity Classification** - Evidence-based risk stratification
+- **Clinical Scoring Engine** - Standardized assessment calculations
+- **Interactive Dashboard** - Widget-based Jupyter interface
+- **Deduplication Logic** - Eliminates redundant findings
+
+## Performance Metrics:
+- **Processing Speed** - <10ms typical analysis time
+- **Pattern Coverage** - 500+ clinical patterns
+- **Scoring Accuracy** - Validated against clinical guidelines
+- **Confidence Scoring** - Uncertainty quantification
+
+# 🚀 Coming in v4.0
+
+- **PubMed API Integration** - Real-time literature support for findings
+- **FHIR Export** - HL7 compliant data exchange
+- **Multi-language Support** - Analysis in multiple languages
+- **Voice Input** - Speech-to-text for hands-free operation
+- **Collaborative Features** - Team-based review capabilities
 
 # 📜 License
+
 This project is open for educational and demonstration purposes only.
 It may not be reproduced, modified, or used commercially without explicit permission.
 All rights reserved © 2025 Mychael Delgardo
 
 # 🔄 Version History
 
-v2.0 - Major rewrite with enhanced clinical intelligence, structured output, and comprehensive neurological assessment
+- **v3.0** (Current) - Interactive dashboard, clinical scoring, enhanced stroke/spine detection
+- **v2.0** - Enhanced pattern recognition, GPT integration, structured output
+- **v1.0** - Basic pattern recognition and risk flagging
 
-v1.0 - Basic pattern recognition and risk flagging
+---
 
+**Synapse v3.0: Where clinical expertise meets computational precision** 🧠⚡
 
-Synapse v2.0: Where clinical expertise meets computational precision 🧠⚡
+*Empowering clinicians with intelligent risk assessment at the speed of thought*
